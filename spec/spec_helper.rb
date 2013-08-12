@@ -8,6 +8,10 @@ ENV["RAILS_ENV"] = "test"
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 
 require "rspec/rails"
+# require 'capybara/rails'
+require 'capybara/rspec'
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

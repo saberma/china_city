@@ -9,7 +9,6 @@ module ChinaCity
     end
 
     def index
-
     end
   end
 end
