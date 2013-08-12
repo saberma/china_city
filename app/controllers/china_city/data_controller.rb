@@ -7,5 +7,9 @@ module ChinaCity
       data = ChinaCity.list(params[:id])
       render json: data
     end
+
+    def index
+
+    end
   end
 end
