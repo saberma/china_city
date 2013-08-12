@@ -7,6 +7,7 @@ module ChinaCity
       # g.fixture_replacement :factory_girl, dir: 'spec/factories'
       g.assets false
       g.helper false
+      g.view_specs false
     end
   end
 end
