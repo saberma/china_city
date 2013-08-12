@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "coffee-rails",   "~> 4.0.0"
-  s.add_development_dependency 'jquery-rails'
+  s.add_development_dependency "jquery-rails", "~> 3.0.4"
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'launchy'
   s.add_development_dependency 'poltergeist'
