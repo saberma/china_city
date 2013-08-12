@@ -7,15 +7,17 @@ require "china_city/version"
 Gem::Specification.new do |s|
   s.name        = "china_city"
   s.version     = ChinaCity::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ChinaCity."
-  s.description = "TODO: Description of ChinaCity."
+  s.authors     = ["saberma"]
+  s.email       = ["mahb45@gmail.com"]
+  s.homepage    = "https://github.com/saberma/china_city"
+  s.summary     = ""
+  s.description = ""
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.0.0"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec-rails"
 end
