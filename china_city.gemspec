@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["saberma"]
   s.email       = ["mahb45@gmail.com"]
   s.homepage    = "https://github.com/saberma/china_city"
-  s.summary     = ""
-  s.description = ""
+  s.summary     = "a gem to help you select chinese area"
+  s.description = "a gem to help you select chinese area like province, city and district"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
