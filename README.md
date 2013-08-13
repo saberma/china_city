@@ -1,4 +1,4 @@
-# ChinaCity 省市区级联选择 Rails Engine Gem
+# ChinaCity 省市区级联选择
 
 [![Build Status](https://travis-ci.org/saberma/china_city.png?branch=master)](https://travis-ci.org/saberma/china_city)
 
