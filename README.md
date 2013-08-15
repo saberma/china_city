@@ -50,3 +50,7 @@ cd china_city
 cd test/dummy
 rails server # http://localhost:3000/china_city
 ```
+
+## 类似项目
+
+* https://github.com/Kehao/area_cn_select
