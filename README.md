@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/saberma/china_city.png?branch=master)](https://travis-ci.org/saberma/china_city)
 
-![china_city](http://f.cl.ly/items/083L2O19020t0W3l3a10/ScreenFlow.mp4.gif)
+![china_city](http://cl.ly/image/3c212i1e3b1T/ScreenFlow.mp4.gif)
 
 ## 简介
 
