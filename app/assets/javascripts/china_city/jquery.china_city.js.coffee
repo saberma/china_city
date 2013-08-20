@@ -3,14 +3,12 @@
     @each ->
       selects = $(@).find('.city-select')
       selects.change ->
-        next_select = selects.eq(selects.index(@) + 1)
-        if !$(@).val() # empty all children city
-          $("option:gt(0)", next_select).remove()
-          next_select.change()
-        else if next_select[0] # init next child
+        $this = $(@)
+        next_selects = selects.slice(selects.index(@) + 1) # empty all children city
+        $("option:gt(0)", next_selects).remove()
+        if next_selects.first()[0] and $this.val() # init next child
           $.get "/china_city/#{$(@).val()}", (data) ->
-            $("option:gt(0)", next_select).remove()
-            next_select[0].options.add(new Option(option[0], option[1])) for option in data
+            next_selects.first()[0].options.add(new Option(option[0], option[1])) for option in data
 
   $ ->
     $('.city-group').china_city()
