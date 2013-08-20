@@ -30,6 +30,7 @@ feature 'china city', js: true do
           select '--省份--'
           expect(find('.city-city').value).to be_blank
           expect(find('.city-district').value).to be_blank
+          sleep 2
           expect(all('.city-city option').size).to eql 1
           expect(all('.city-district option').size).to eql 1
         end
@@ -38,6 +39,7 @@ feature 'china city', js: true do
         within '.rails-helper' do
           select '--城市--'
           expect(find('.city-district').value).to be_blank
+          sleep 2
           expect(all('.city-district option').size).to eql 1
         end
       end
@@ -48,6 +50,7 @@ feature 'china city', js: true do
           select '江苏省'
           expect(find('.city-city').value).to be_blank
           expect(find('.city-district').value).to be_blank
+          sleep 2
           expect(all('.city-city option').size).to eql 14
           expect(all('.city-district option').size).to eql 1
         end
@@ -56,6 +59,7 @@ feature 'china city', js: true do
         within '.rails-helper' do
           select '广州市'
           expect(find('.city-district').value).to be_blank
+          sleep 2
           expect(all('.city-district option').size).to eql 14
         end
       end
