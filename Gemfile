@@ -1,4 +1,8 @@
-source "http://ruby.taobao.org"
+if ENV['TRAVIS']
+  source 'https://rubygems.org'
+else
+  source 'http://ruby.taobao.org'
+end
 
 # Declare your gem's dependencies in china_city.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
