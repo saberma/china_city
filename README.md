@@ -47,7 +47,7 @@
 ```bash
 git clone git@github.com:saberma/china_city.git
 cd china_city
-cd test/dummy
+cd spec/dummy
 rails server # http://localhost:3000/china_city
 ```
 
