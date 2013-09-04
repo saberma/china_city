@@ -3,7 +3,7 @@ PATH
   specs:
     china_city (0.0.2)
       jquery-rails
-      rails (~> 3.1.0)
+      rails (>= 3.1.0)
 
 GEM
   remote: http://ruby.taobao.org/
