@@ -59,9 +59,11 @@ rails server # http://localhost:3000/china_city
 ## 测试
 
 ```bash
-rake appraisal:rails32 spec
+rvm use 2.0.0
 rake appraisal:rails4 spec
+rake appraisal:rails32 spec
 rvm use 1.9.3
+bundle install
 rake appraisal:rails31 spec
 ```
 
