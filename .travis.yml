@@ -1,6 +1,6 @@
 language: ruby
 
-bundler_args: '-j5' # avoid travis-ci to set deployment mode by default, and use parallel bundlerr
+bundler_args: '-j6' # avoid travis-ci to set deployment mode by default, and use parallel bundlerr
 
 #before_script: bundle install
 
