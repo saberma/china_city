@@ -1,7 +1,7 @@
 PATH
   remote: /Users/saberma/Documents/china_city
   specs:
-    china_city (0.0.2)
+    china_city (0.0.3)
       jquery-rails
       rails (>= 3.1.0)
 
