@@ -6,9 +6,7 @@ before_script: bundle install
 
 script: bundle exec rake spec
 
-rvm:
-  - 1.9.3
-  - 2.0.0
+rvm: 2.0.0
 
 gemfile:
   - gemfiles/rails4.gemfile
@@ -19,6 +17,6 @@ matrix:
   exclude:
     - rvm: 2.0.0
       gemfile: gemfiles/rails31.gemfile
+  include:
     - rvm: 1.9.3
-      gemfile: gemfiles/rails4.gemfile
-      gemfile: gemfiles/rails32.gemfile
+      gemfile: gemfiles/rails31.gemfile
