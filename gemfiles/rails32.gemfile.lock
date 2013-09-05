@@ -6,7 +6,6 @@ PATH
       rails (>= 3.1.0)
 
 GEM
-  remote: http://ruby.taobao.org/
   remote: https://rubygems.org/
   specs:
     actionmailer (3.2.14)
