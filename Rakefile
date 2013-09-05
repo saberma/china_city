@@ -5,6 +5,7 @@ rescue LoadError
 end
 
 require 'rdoc/task'
+require 'appraisal'
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'

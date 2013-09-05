@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 feature 'china city', js: true do

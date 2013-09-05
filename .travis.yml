@@ -1,7 +1,22 @@
 language: ruby
 
-rvm:
-  - 2.0.0
+bundler_args: '' # avoid travis-ci to set deployment mode by default
 
-script:
-  - bundle exec rspec spec
+before_script: bundle install
+
+script: bundle exec rake spec
+
+rvm: 2.0.0
+
+gemfile:
+  - gemfiles/rails4.gemfile
+  - gemfiles/rails32.gemfile
+  - gemfiles/rails31.gemfile
+
+matrix:
+  exclude:
+    - rvm: 2.0.0
+      gemfile: gemfiles/rails31.gemfile
+  include:
+    - rvm: 1.9.3
+      gemfile: gemfiles/rails31.gemfile

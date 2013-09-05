@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: /Users/saberma/Documents/china_city
   specs:
     china_city (0.0.2)
       jquery-rails
@@ -146,5 +146,6 @@ DEPENDENCIES
   jquery-rails
   launchy
   poltergeist
+  rails (~> 3.1.0)
   rspec-rails
   sqlite3
