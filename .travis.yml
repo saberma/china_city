@@ -1,6 +1,6 @@
 language: ruby
 
-bundler_args: '-j32' # avoid travis-ci to set deployment mode by default, and use parallel bundlerr
+bundler_args: '-j8' # avoid travis-ci to set deployment mode by default, and use parallel bundlerr
 
 #before_script: bundle install
 
@@ -10,6 +10,7 @@ before_install:
   - grep -i processor /proc/cpuinfo | wc -l
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
   - gem install bundler --pre
+  - bundler -v
 
 rvm: 2.0.0
 
