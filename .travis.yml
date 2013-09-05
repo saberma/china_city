@@ -1,7 +1,14 @@
 language: ruby
 
-rvm:
-  - 2.0.0
-
 script:
-  - bundle exec rspec spec
+  - bundle exec rake spec
+
+matrix:
+  include:
+    - rvm: 2.0.0
+      gemfile:
+        - gemfiles/rails4.gemfile
+        - gemfiles/rails32.gemfile
+    - rvm: 1.9.3
+      gemfile:
+        - gemfiles/rails31.gemfile
