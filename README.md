@@ -4,6 +4,10 @@
 
 ![china_city](http://cl.ly/image/3c212i1e3b1T/ScreenFlow.mp4.gif)
 
+支持 Rails3.1, Rails3.2, Rails4.0。
+
+请留意，Rails3.1 与 Ruby2.0 不兼容，sprockets 无法正常解析 application.js，请使用 Ruby1.9。
+
 ## 简介
 
 这是一个基于 Rails Engine 开发的插件，为 Rails 项目增加省市区三级（或者省市 二级）选择框，可用于实现收货地址等信息的录入。
@@ -47,8 +51,20 @@
 ```bash
 git clone git@github.com:saberma/china_city.git
 cd china_city
-cd test/dummy
+rake appraisal:install
+cd spec/dummy
 rails server # http://localhost:3000/china_city
+```
+
+## 测试
+
+```bash
+rvm use 2.0.0
+rake appraisal:rails4 spec
+rake appraisal:rails32 spec
+rvm use 1.9.3
+bundle install
+rake appraisal:rails31 spec
 ```
 
 ## 类似项目

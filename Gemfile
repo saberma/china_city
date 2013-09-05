@@ -1,3 +1,4 @@
+# rails plugin new china_city --dummy-path=spec/dummy --skip-test-unit --mountable
 if ENV['TRAVIS']
   source 'https://rubygems.org'
 else
@@ -15,5 +16,6 @@ gemspec
 # your gem to rubygems.org.
 
 gem 'jquery-rails' # fixed: ActionView::Template::Error: couldn't find file 'jquery'
+gem 'appraisal'
 # To use debugger
 # gem 'debugger'
