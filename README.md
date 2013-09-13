@@ -25,7 +25,7 @@
 
 ### config/routes.rb
 
-    mount ChinaCity::Engine => '/china_city' if defined?(ChinaCity)
+    mount ChinaCity::Engine => '/china_city'
 
 ## 使用
 
