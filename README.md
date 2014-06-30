@@ -33,18 +33,23 @@
 
 ```ruby
   .city-group
-    select.city-select
-      option --省份--
-      = options_for_select(ChinaCity.list)
-    select.city-select
+    select.state
+      option --省份/洲--
+      = options_for_select(ChinaCity.html_options)
+    select.city
       option --城市--
-    select.city-select
+    select.district
       option --地区--
 ```
 
-请留意：所有选择框都要有 `city-select` class，并都包含于 class='city-group' 的 DOM 元素之下。
+```ruby
+$('.china-city').china_city()
 
-选择后的值为国家地区编码，如深圳市的为 `440300`，可通过调用 `ChinaCity.get('440300')` 将编码转化为城市名称。
+# 也可以用自己的选择器来选择各自的select
+$('.china-city').china_city({state: '.state', city: '.city', district: '.district'})
+```
+
+选择后的值为国家名
 
 ## 贡献
 
