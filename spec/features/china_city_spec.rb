@@ -29,19 +29,19 @@ feature 'china city', js: true do
       scenario 'city and district' do
         within '.rails-helper' do
           select '--省份--'
-          expect(find('.city-city').value).to be_blank
-          expect(find('.city-district').value).to be_blank
+          expect(find('.city').value).to be_blank
+          expect(find('.district').value).to be_blank
           sleep 2
-          expect(all('.city-city option').size).to eql 1
-          expect(all('.city-district option').size).to eql 1
+          expect(all('.city option').size).to eql 1
+          expect(all('.district option').size).to eql 1
         end
       end
       scenario 'district' do
         within '.rails-helper' do
           select '--城市--'
-          expect(find('.city-district').value).to be_blank
+          expect(find('.district').value).to be_blank
           sleep 2
-          expect(all('.city-district option').size).to eql 1
+          expect(all('.district option').size).to eql 1
         end
       end
     end
@@ -49,19 +49,19 @@ feature 'china city', js: true do
       scenario 'city and district' do
         within '.rails-helper' do
           select '江苏省'
-          expect(find('.city-city').value).to be_blank
-          expect(find('.city-district').value).to be_blank
+          expect(find('.city').value).to be_blank
+          expect(find('.district').value).to be_blank
           sleep 2
-          expect(all('.city-city option').size).to eql 14
-          expect(all('.city-district option').size).to eql 1
+          expect(all('.city option').size).to eql 14
+          expect(all('.district option').size).to eql 1
         end
       end
       scenario 'district' do
         within '.rails-helper' do
           select '广州市'
-          expect(find('.city-district').value).to be_blank
+          expect(find('.district').value).to be_blank
           sleep 2
-          expect(all('.city-district option').size).to eql 14
+          expect(all('.district option').size).to eql 14
         end
       end
     end

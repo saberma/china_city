@@ -6,6 +6,10 @@ module ChinaCity
   PATTERN = /(\d{2})(\d{2})(\d{2})/
 
   class << self
+    def html_options(parent_id = '000000')
+      list(parent_id).map{|item| [item[0], item[0], {'data-value' => item[1] }] }
+    end
+    
     def list(parent_id = '000000')
       result = []
       return result if parent_id.blank?
@@ -20,7 +24,6 @@ module ChinaCity
 
       #sort
       result.sort! {|a, b| a[1] <=> b[1]}
-      result
     end
 
     # @options[:prepend_parent] 是否显示上级区域
