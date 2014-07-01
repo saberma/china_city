@@ -2,27 +2,31 @@
   province = '440000'
   city = '440300'
   district = '440305'
-  provinces  = ChinaCity.list
-  cities     = ChinaCity.list(province)
-  districtes = ChinaCity.list(city)
+  provinces  = ChinaCity.html_options
+  cities     = ChinaCity.html_options(province)
+  districtes = ChinaCity.html_options(city)
+  
+  province = ChinaCity.get('440000')
+  city = ChinaCity.get('440300')
+  district = ChinaCity.get('440305')
 %>
-<div class='rails-helper city-group'>
-  <%= select_tag :province, options_for_select(provinces, province) , prompt: '--省份--', class: ['city-select', 'city-province'] %>
-  <%= select_tag :city    , options_for_select(cities, city)        , prompt: '--城市--', class: ['city-select', 'city-city'] %>
-  <%= select_tag :district, options_for_select(districtes, district), prompt: '--地区--', class: ['city-select', 'city-district'] %>
+<div class='rails-helper china-city'>
+  <%= select_tag :state, options_for_select(provinces, province) , prompt: '--省份--', class: 'state' %>
+  <%= select_tag :city    , options_for_select(cities, city)        , prompt: '--城市--', class: 'city' %>
+  <%= select_tag :district, options_for_select(districtes, district), prompt: '--地区--', class: 'district' %>
 </div>
 
-<div class='html-tag city-group'>
-  <select class='city-select city-province'>
+<div class='html-tag china-city'>
+  <select class='state'>
     <option>--省份--</option>
-    <%= options_for_select(ChinaCity.list, province) %>
+    <%= options_for_select(provinces, province) %>
   </select>
-  <select class='city-select city-city'>
+  <select class='city'>
     <option>--城市--</option>
     <%= options_for_select(cities, city) %>
   </select>
-  <select class='city-select city-district'>
+  <select class='district'>
     <option>--地区--</option>
     <%= options_for_select(districtes, district) %>
   </select>
-  </div>
+</div>
