@@ -8,12 +8,21 @@ module ChinaCity
   class << self
     def list(parent_id = '000000')
       result = []
-      return result if parent_id.blank?
+      return result if parent_id.blank?      
       province_id = province(parent_id)
       city_id = city(parent_id)
-      children = data
-      children = children[province_id][:children] if children.has_key?(province_id)
-      children = children[city_id][:children] if children.has_key?(city_id)
+
+      if parent_id.end_with?('0000')
+        children = data[parent_id] ? data[parent_id][:children] : {}
+      else parent_id.end_with?('00')
+        if data[province_id]
+          children = data[province_id][:children][city_id] ?
+                     data[province_id][:children][city_id][:children] : {}
+        else
+          children = {}
+        end
+      end      
+
       children.each_key do |id|
         result.push [ children[id][:text], id]
       end
@@ -88,7 +97,7 @@ module ChinaCity
             city_id = city(id)
             @list[province_id] = {:text => id_text[province_id], :children => {}} unless @list.has_key?(province_id)
             if @list[province_id][:children].has_key?(city_id)
-              @list[province_id][:children][city_id][:children][id] = {:text => id_text[province_id]}
+              @list[province_id][:children][city_id][:children][id] = {:text => text }
             else
               @list[province_id][:children][id] = {:text => text}
             end
