@@ -70,7 +70,10 @@ module ChinaCity
         @list = {}
         #@see: http://github.com/RobinQu/LocationSelect-Plugin/raw/master/areas_1.0.json
         json = JSON.parse(File.read("#{Engine.root}/db/areas.json"))
-        districts = json.values.flatten
+        #基于id的正序
+        districts = json.values.flatten.sort_by{ |h| h["id"] }
+        id_text = districts.inject({}) { |r, h| r[h["id"]] = h["text"]; r }  
+        
         districts.each do |district|
           id = district['id']
           text = district['text']
@@ -78,14 +81,17 @@ module ChinaCity
             @list[id] =  {:text => text, :children => {}}
           elsif id.end_with?('00')
             province_id = province(id)
-            @list[province_id] = {:text => nil, :children => {}} unless @list.has_key?(province_id)
+            @list[province_id] = {:text => id_text[province_id], :children => {}} unless @list.has_key?(province_id)
             @list[province_id][:children][id] = {:text => text, :children => {}}
           else
             province_id = province(id)
             city_id = city(id)
-            @list[province_id] = {:text => text, :children => {}} unless @list.has_key?(province_id)
-            @list[province_id][:children][city_id] = {:text => text, :children => {}} unless @list[province_id][:children].has_key?(city_id)
-            @list[province_id][:children][city_id][:children][id] = {:text => text}
+            @list[province_id] = {:text => id_text[province_id], :children => {}} unless @list.has_key?(province_id)
+            if @list[province_id][:children].has_key?(city_id)
+              @list[province_id][:children][city_id][:children][id] = {:text => id_text[province_id]}
+            else
+              @list[province_id][:children][id] = {:text => text}
+            end
           end
         end
       end
