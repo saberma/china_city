@@ -10,6 +10,6 @@
           $.get "/china_city/#{$(@).val()}", (data) ->
             next_selects.first()[0].options.add(new Option(option[0], option[1])) for option in data
 
-  $ ->
+  $(document).on 'ready page:load', ->
     $('.city-group').china_city()
 )(jQuery)
