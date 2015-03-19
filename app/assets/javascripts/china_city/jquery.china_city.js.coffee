@@ -9,7 +9,7 @@
         $.get "/china_city/#{value}", (data) ->
           $('<option>', {value: option[0], text: option[0]}).data('value', option[1]).appendTo(child_select) for option in data
           # init value after data completed.
-          child_select.trigger(‘china_city:load_data_completed’);
+          child_select.trigger('china_city:load_data_completed');
   
   $.fn.china_city = (options) ->
     options = $.extend
