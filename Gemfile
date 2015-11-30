@@ -2,7 +2,7 @@
 if ENV['TRAVIS']
   source 'https://rubygems.org'
 else
-  source 'http://ruby.taobao.org'
+  source 'https://ruby.taobao.org'
 end
 
 # Declare your gem's dependencies in china_city.gemspec.
@@ -15,7 +15,8 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-gem 'jquery-rails' # fixed: ActionView::Template::Error: couldn't find file 'jquery'
+#gem 'jquery-rails' # fixed: ActionView::Template::Error: couldn't find file 'jquery'
 gem 'appraisal'
+gem 'spinying','~> 0.9'
 # To use debugger
 # gem 'debugger'

@@ -1,12 +1,12 @@
 PATH
-  remote: /Users/saberma/Documents/china_city
+  remote: ../
   specs:
     china_city (0.0.4)
       jquery-rails
       rails (>= 3.1.0)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
   specs:
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
@@ -142,3 +142,6 @@ DEPENDENCIES
   rails (~> 4.0.0)
   rspec-rails
   sqlite3
+
+BUNDLED WITH
+   1.10.5

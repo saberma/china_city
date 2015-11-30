@@ -1,4 +1,6 @@
+# encoding: utf-8
 require_dependency "china_city/application_controller"
+require 'spinying'
 
 module ChinaCity
   class DataController < ApplicationController
@@ -8,6 +10,8 @@ module ChinaCity
     end
 
     def index
+      #puts Spinying.parse(:world => 'hello')
+      #text = Spinying.parse(:world => district['text']).upcase + ' ' + district['text']
     end
   end
 end
