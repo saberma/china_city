@@ -73,7 +73,16 @@ module ChinaCity
         districts = json.values.flatten
         districts.each do |district|
           id = district['id']
-          text = district['text']
+          abbreviation = Spinying.parse(:word => district['text'])[0].upcase
+
+#          if abbreviation.length > 4
+#            abbreviation = abbreviation[0...-3]
+#          else
+#            abbreviation = abbreviation[0...-1]
+#          end
+
+          text = abbreviation + ' ' + district['text']
+
           if id.end_with?('0000')
             @list[id] =  {:text => text, :children => {}}
           elsif id.end_with?('00')
