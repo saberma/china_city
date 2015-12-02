@@ -59,7 +59,9 @@ rails server # http://localhost:3000/china_city
 ## 测试
 
 ```bash
+brew install phantomjs    # http://git.io/vRJ1M
 rvm use 2.0.0
+rake appraisal:install
 rake appraisal:rails4 spec
 rake appraisal:rails32 spec
 rvm use 1.9.3
