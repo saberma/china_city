@@ -68,7 +68,7 @@ module ChinaCity
         #   }
         # }
         @list = {}
-        #@see: http://github.com/RobinQu/LocationSelect-Plugin/raw/master/areas_1.0.json
+        #@see: https://github.com/cn/GB2260
         json = JSON.parse(File.read("#{Engine.root}/db/areas.json"))
         districts = json.values.flatten
         districts.each do |district|
