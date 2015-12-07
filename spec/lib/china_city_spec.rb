@@ -11,24 +11,31 @@ describe ChinaCity do
 
     #区
     ChinaCity.list('440300').should eql [["市辖区", "440301"], ["罗湖区", "440303"], ["福田区", "440304"], ["南山区", "440305"], ["宝安区", "440306"], ["龙岗区", "440307"], ["盐田区", "440308"]]
+
+    #街道
+    ChinaCity.list('440305').should eql [["南头街道", "440305001"], ["南山街道", "440305002"], ["沙河街道", "440305003"], ["蛇口街道", "440305005"], ["招商街道", "440305006"], ["粤海街道", "440305007"], ["桃源街道", "440305008"], ["西丽街道", "440305009"]]
   end
 
   it 'should be get' do
     ChinaCity.get('440000').should eql '广东省'
     ChinaCity.get('440300').should eql '深圳市'
     ChinaCity.get('440305').should eql '南山区'
-    ChinaCity.get('440000', prepend_parent: true).should eql '广东省'
-    ChinaCity.get('440300', prepend_parent: true).should eql '广东省深圳市'
-    ChinaCity.get('440305', prepend_parent: true).should eql '广东省深圳市南山区'
+    ChinaCity.get('440000'   , prepend_parent: true).should eql '广东省'
+    ChinaCity.get('440300'   , prepend_parent: true).should eql '广东省深圳市'
+    ChinaCity.get('440305'   , prepend_parent: true).should eql '广东省深圳市南山区'
+    ChinaCity.get('440305001', prepend_parent: true).should eql '广东省深圳市南山区南头街道'
   end
 
   it 'should be parse' do # 可以直接获取省、市
     ChinaCity.province('440000').should eql '440000' # 省
     ChinaCity.city('440000').should eql '440000'
+    ChinaCity.district('440000').should eql '440000'
     ChinaCity.province('440300').should eql '440000' # 市
     ChinaCity.city('440300').should eql '440300'
+    ChinaCity.district('440300').should eql '440300'
     ChinaCity.province('440305').should eql '440000' # 区
     ChinaCity.city('440305').should eql '440300'
+    ChinaCity.district('440305').should eql '440305'
   end
 
   it 'should has children' do    # 省市区都有子记录
