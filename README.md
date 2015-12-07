@@ -1,4 +1,4 @@
-# ChinaCity 省市区级联选择
+# ChinaCity 省市区街道级联选择
 
 [![Build Status](https://travis-ci.org/saberma/china_city.png?branch=master)](https://travis-ci.org/saberma/china_city)
 
