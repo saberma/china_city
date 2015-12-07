@@ -167,6 +167,3 @@ DEPENDENCIES
   poltergeist (>= 1.8.1)
   rspec-rails
   sqlite3
-
-BUNDLED WITH
-   1.10.6

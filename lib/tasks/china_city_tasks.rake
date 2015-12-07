@@ -76,26 +76,33 @@ task :save_district_gb2260_taobao_map do
   end
 
   # 2. 获取街道记录
+  # districts.select{|district| district.code.start_with?('1301')}.each do |district|
   districts.each do |district|
     result = get_remote_streets(district.code)
     empty_districts << district unless result
   end
 
+  # 3. 获取淘宝省市区记录
+  response = HTTParty.get("https://g.alicdn.com/kg/??address/6.0.4/index-min.js?t=1449112049369.js")
+  tdata = response.to_s.sub(/.+return\st=e\}\(\),r=function\(t\)\{var\se=/, '')
+  tdata = tdata.sub(/;\nreturn\st=e\}\(\),c=function\(t\).+/m, '')
+  cities = JSON.parse(tdata)
   result = {}
   cities.each do |city|
     result[city[1][0]] = city[0]
   end
 
+  # 4. 输出结果
   map_data = {}
-
-  File.readlines("db/district_without_streets.txt").each do |line|
-    id, text = line.split
+  empty_districts.each do |district|
+    code = district.code
+    text = district.name
     next if %w(市辖区 城区 郊区).include?(text)
     text = text.gsub(/(自治县|市|区|县)$/,'')
     text = text.gsub(/(黎族苗族|黎族苗族|侗族|土家族苗族|彝族回族苗族|土家族|苗族|回族土族|土族|回族|撒拉族)$/,'')
     text = '和县' if text == '和'
     if tid = result[text]
-      map_data[id] = tid
+      map_data[code] = tid
     else
        puts text
     end
