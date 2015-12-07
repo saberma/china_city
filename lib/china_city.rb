@@ -38,7 +38,11 @@ module ChinaCity
       city_id = city(id)
       city_text = children[city_id][:text]
       children = children[city_id][:children]
-      return "#{prepend_parent ? (province_text + city_text) : ''}#{children[id][:text]}"
+      return "#{prepend_parent ? (province_text + city_text) : ''}#{children[id][:text]}" if children.has_key?(id)
+      district_id = district(id)
+      district_text = children[district_id][:text]
+      children = children[district_id][:children]
+      return "#{prepend_parent ? (province_text + city_text + district_text) : ''}#{children[id][:text]}"
     end
 
     def province(code)
