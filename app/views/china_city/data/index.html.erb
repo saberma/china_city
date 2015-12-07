@@ -1,17 +1,22 @@
 <%-
   province = '440000'
-  city = '440300'
+  city     = '440300'
   district = '440305'
+  street   = '440305001'
   provinces  = ChinaCity.list
   cities     = ChinaCity.list(province)
   districtes = ChinaCity.list(city)
+  streets    = ChinaCity.list(district)
 %>
+<h2>Rails Helper</h2>
 <div class='rails-helper city-group'>
   <%= select_tag :province, options_for_select(provinces, province) , prompt: '--省份--', class: ['city-select', 'city-province'] %>
   <%= select_tag :city    , options_for_select(cities, city)        , prompt: '--城市--', class: ['city-select', 'city-city'] %>
   <%= select_tag :district, options_for_select(districtes, district), prompt: '--地区--', class: ['city-select', 'city-district'] %>
+  <%= select_tag :streets , options_for_select(streets, street)     , prompt: '--街道--', class: ['city-select', 'city-street'] %>
 </div>
 
+<h2>HTML</h2>
 <div class='html-tag city-group'>
   <select class='city-select city-province'>
     <option>--省份--</option>
@@ -24,5 +29,9 @@
   <select class='city-select city-district'>
     <option>--地区--</option>
     <%= options_for_select(districtes, district) %>
+  </select>
+  <select class='city-select city-street'>
+    <option>--街道--</option>
+    <%= options_for_select(streets, street) %>
   </select>
   </div>

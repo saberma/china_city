@@ -10,12 +10,14 @@ module ChinaCity
       result = []
       return result if parent_id.blank?
       province_id = province(parent_id)
-      city_id = city(parent_id)
+      city_id     = city(parent_id)
+      district_id = district(parent_id)
       children = data
       children = children[province_id][:children] if children.has_key?(province_id)
       children = children[city_id][:children] if children.has_key?(city_id)
+      children = children[district_id][:children] if children.has_key?(district_id)
       children.each_key do |id|
-        result.push [ children[id][:text], id]
+        result.push [children[id][:text], id]
       end
 
       #sort

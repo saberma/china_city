@@ -6,8 +6,12 @@
 
 ## 简介
 
-这是一个基于 Rails Engine 开发的插件，为 Rails 项目增加省市区三级（或者省市 二级）选择框，可用于实现收货地址等信息的录入。
-数据来源：http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html
+这是一个基于 Rails Engine 开发的插件，为 Rails 项目增加省市区街道四级（或者省市区三级、省市二级）选择框，可用于实现收货地址等信息的录入。
+
+### 数据来源
+
+* 省市区: http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201504/t20150415_712722.html
+* 街道: 淘宝
 
 ## 安装
 
@@ -37,6 +41,8 @@
       option --城市--
     select.city-select
       option --地区--
+    select.street-select
+      option --街道--
 ```
 
 请留意：所有选择框都要有 `city-select` class，并都包含于 class='city-group' 的 DOM 元素之下。
