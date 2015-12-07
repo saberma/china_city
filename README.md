@@ -49,6 +49,10 @@
 
 选择后的值为国家地区编码，如深圳市的为 `440300`，可通过调用 `ChinaCity.get('440300')` 将编码转化为城市名称。
 
+## 更新
+
+* 0.0.5  更新省市区数据到最新的国标，支持街道
+
 ## 贡献
 
 ```bash
@@ -56,20 +60,17 @@ git clone git@github.com:saberma/china_city.git
 cd china_city
 rake appraisal:install
 cd spec/dummy
-rails server # http://localhost:3000/china_city
+rails server
+open http://localhost:3000/china_city
 ```
 
 ## 测试
 
 ```bash
 brew install phantomjs    # http://git.io/vRJ1M
-rvm use 2.0.0
+rvm use 2.1
 rake appraisal:install
 rake appraisal:rails4 spec
-rake appraisal:rails32 spec
-rvm use 1.9.3
-bundle install
-rake appraisal:rails31 spec
 ```
 
 ## 类似项目

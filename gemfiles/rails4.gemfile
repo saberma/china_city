@@ -6,4 +6,4 @@ gem "jquery-rails"
 gem "appraisal"
 gem "rails", "~> 4.0.0"
 
-gemspec :path=>"../"
+gemspec :path => "../"
