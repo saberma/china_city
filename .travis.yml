@@ -12,7 +12,7 @@ before_install:
   - gem install bundler --pre
   - bundler -v
 
-rvm: 2.0.0
+rvm: ruby-2.1.7
 
 gemfile:
   - gemfiles/rails4.gemfile
