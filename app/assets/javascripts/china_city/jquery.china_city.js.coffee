@@ -13,6 +13,6 @@
             # init value after data completed.
             next_selects.trigger('china_city:load_data_completed');
 
-  $(document).on 'ready page:load', ->
+  $(document).on 'ready page:change', ->
     $('.city-group').china_city()
 )(jQuery)
