@@ -30,6 +30,8 @@
 
 ## 使用
 
+可以参考 https://github.com/saberma/china_city_example 示例代码。
+
 在页面中加入选择框，示例代码使用 slim 格式
 
 ```ruby

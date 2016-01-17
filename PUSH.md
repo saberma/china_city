@@ -2,5 +2,5 @@
 
 ```
 gem build china_city.gemspec
-gem push china_city-0.0.5.gem
+gem push china_city-0.0.6.gem
 ```
