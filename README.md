@@ -43,7 +43,7 @@
       option --城市--
     select.city-select
       option --地区--
-    select.street-select
+    select.city-select
       option --街道--
 ```
 
