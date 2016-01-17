@@ -1,4 +1,4 @@
-require 'gb2260'
+require 'GB2260'
 require 'json'
 
 desc '更新 areas.json 数据'
