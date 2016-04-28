@@ -51,6 +51,9 @@
 
 选择后的值为国家地区编码，如深圳市的为 `440300`，可通过调用 `ChinaCity.get('440300')` 将编码转化为城市名称。
 
+### React 用户 [react-china-city](https://github.com/GeekPark/react-china-city)
+如果你使用 React 和 webpack/browserify 可以直接使用 `npm i react-china-city --save` 来进行前端接入。
+
 ## 更新
 
 * 0.0.5  更新省市区数据到最新的国标，支持街道
