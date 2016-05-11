@@ -1,7 +1,7 @@
 (($) ->
   $.fn.china_city = () ->
     @each ->
-      selects = $(@).find('.city-select')
+      selects = $(@).find('select.city-select')
       selects.change ->
         $this = $(@)
         next_selects = selects.slice(selects.index(@) + 1) # empty all children city
