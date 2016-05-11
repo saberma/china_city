@@ -7,7 +7,7 @@ module ChinaCity
 
   class << self
     # @options[:show_all] 是否显示港澳台这三处敏感地区
-    def list(parent_id, options = {})
+    def list(parent_id='000000', options = {})
       parent_id ||= '000000'
       show_all = options[:show_all] || false
 
