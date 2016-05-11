@@ -4,6 +4,18 @@
 
 ![china_city](http://cl.ly/image/3c212i1e3b1T/ScreenFlow.mp4.gif)
 
+## 新增
+在china_city的基础上，增加回调函数配置。添加`data-customfunc`属性，将要执行的代码键入，即可在`select.change`事件完成后执行。
+
+代码示例：
+```ruby
+<%= select_tag "province_id", 
+    options_for_select(ChinaCity.list, '440000'), 
+    class: "city-select",
+    prompt: "--省份--"
+    "data-customfunc": "$('#city').material_select();" %>
+```
+
 ## 简介
 
 这是一个基于 Rails Engine 开发的插件，为 Rails 项目增加省市区街道四级（或者省市区三级、省市二级）选择框，可用于实现收货地址等信息的录入。
