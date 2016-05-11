@@ -123,6 +123,21 @@
     {
       "text": "新疆维吾尔自治区",
       "id": "650000"
+    },
+    {
+      "text": "台湾省",
+      "id": "710000",
+      "sensitive_areas": true
+    },
+    {
+      "text": "香港特别行政区",
+      "id": "810000",
+      "sensitive_areas": true
+    },
+    {
+      "text": "澳门特别行政区",
+      "id": "820000",
+      "sensitive_areas": true
     }
   ],
   "city": [
