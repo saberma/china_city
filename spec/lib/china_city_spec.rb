@@ -45,7 +45,9 @@ describe ChinaCity do
 
     # 省
     empty_provinces = data.select{|k, v| v[:children].empty?}
-    empty_provinces.should be_empty
+    # empty_provinces.should be_empty
+    # 港澳台暂时没有子记录
+    empty_provinces.keys.should eql ["710000", "810000", "820000"]
 
     # 市
     cities = {}
