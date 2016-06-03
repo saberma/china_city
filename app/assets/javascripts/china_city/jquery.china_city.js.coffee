@@ -15,4 +15,4 @@
 
   $(document).on 'ready page:change', ->
     $('.city-group').china_city()
-)(jQuery)
+)(if typeof(jQuery)=="function" then jQuery else Zepto)
