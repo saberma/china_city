@@ -1,6 +1,9 @@
 require 'GB2260'
 require 'json'
 
+GB2260::Data.data['201605'] = Hash[File.readlines('db/GB2260-201605.txt').map {|l| l.chomp.split("\t") }]
+GB2260::LATEST_REVISION = '201605'
+
 namespace :gem do
 
   desc '更新 areas.json 数据'
