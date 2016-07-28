@@ -1,10 +1,60 @@
 require 'GB2260'
 require 'json'
+require 'csv'
+require 'pry'
+require 'china_unit'
 
+# GB2260 还未提供 201605 民政局统计数据
 GB2260::Data.data['201605'] = Hash[File.readlines('db/GB2260-201605.txt').map {|l| l.chomp.split("\t") }]
 GB2260::LATEST_REVISION = '201605'
 
 namespace :gem do
+
+  desc '从民政局网站抓取并生成省市区数据'
+  task :update_data_from_mca do
+    ChinaUnit.each(0) do |province|
+      ChinaUnit.new(province['id']).mca_data.each do |i|
+        p "empty: #{i}" if i['id'].empty?
+        u = ChinaUnit.new(i['id']).oneself
+        if u
+          u.merge! i
+        else
+          p "not found: #{i}"
+        end
+      end
+      sleep(2)
+    end
+
+    File.open('db/areas.json', 'w') do |f|
+      f.write JSON.pretty_generate(ChinaUnit::DATA)
+    end
+  end
+
+  desc '对比顺丰覆盖数据'
+  task :diff_sf_china_cover do
+
+    # 获取顺丰覆盖数据中街道数据
+    sf_china_cover = CSV.read('db/sf_china_cover.csv').select.each_with_index do |row, i|
+      i!=0 and row[6] and row[7] != '未开通'
+    end.map{|i| i.slice(3..6)}
+
+    # 逐个对比
+    sf_china_cover.each do |names|
+      full_name = names.join('')
+      search_result = ChinaUnit.find_by_names(names)
+      fetch_name = search_result.last.full_name
+      if full_name == fetch_name
+        search_result.last.by_level(3)["support_sf"] = true
+      else
+        search_result.last.by_level(3)["support_sf"] = true
+        p "#{full_name} => #{fetch_name}"
+      end
+    end
+
+    File.open('db/areas2.json', 'w') do |f|
+      f.write JSON.pretty_generate(ChinaUnit::DATA)
+    end
+  end
 
   desc '更新 areas.json 数据'
   task :update_data do
@@ -26,7 +76,13 @@ namespace :gem do
           districts << { text: district.name, id: district.code }
         end
       end
-      provinces << { text:province.name, id: province.code } unless gb_cities.empty?    # 台湾省、香港、澳门没有市
+
+      # 台湾省、香港、澳门没有市
+      if gb_cities.empty? && ["710000", "810000", "820000"].include?(province.code)
+        provinces << { text:province.name, id: province.code, sensitive_areas: true } 
+      else
+        provinces << { text:province.name, id: province.code } 
+      end
     end
 
     map_codes = YAML.load_file("db/district_gb2260_taobao.yml")
@@ -109,7 +165,7 @@ namespace :gem do
       if tid = result[text]
         map_data[code] = tid
       else
-         puts text
+        puts text
       end
     end
 

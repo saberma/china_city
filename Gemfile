@@ -17,5 +17,6 @@ gemspec
 
 gem 'jquery-rails' # fixed: ActionView::Template::Error: couldn't find file 'jquery'
 gem 'appraisal'
+gem 'pry'
 # To use debugger
 # gem 'debugger'
