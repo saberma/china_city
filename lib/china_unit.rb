@@ -1,14 +1,16 @@
 require 'nokogiri'
+require 'redis'
 class ChinaUnit
   include HTTParty
 
   # 民政局的国家数据查询平台
   base_uri 'http://202.108.98.30/'
-  #debug_output $stdout
+  # debug_output $stdout
 
   DATA = JSON.parse(File.read("db/areas.json"))
   LEVELS = DATA.keys
   NOT_FOUND = []
+  CACHE = Redis.new(db: 14)
 
   attr_accessor :id, :text
 
@@ -17,6 +19,7 @@ class ChinaUnit
     self.text = self.parents.last['text']
   end
 
+  # 获取民政局数据
   def mca_data
     query = {
       shengji:  "#{self.parents[0]['text']}(#{self.parents[0]["short"].join("、")})".encode(Encoding::GBK),
@@ -62,7 +65,7 @@ class ChinaUnit
 
   def children
     @children ||= if level < 3
-                    DATA[LEVELS[level+1]].select{|i| i['id'].start_with? id.gsub('00', '')}
+                    DATA[LEVELS[level+1]].select{|i| i['id'].start_with? id.gsub(/(00)+$/, '')}
                   else
                     nil
                   end
@@ -70,6 +73,13 @@ class ChinaUnit
 
   def full_name 
     parents.map{|i| i['text']}.join('')
+  end
+
+  def save
+    by_level(level).merge!({"id" => id, "text" => text})
+    File.open('db/areas.json', 'w') do |f|
+      f.write JSON.pretty_generate(DATA)
+    end
   end
 
   def self.find_by_names(names)
@@ -84,6 +94,11 @@ class ChinaUnit
   end
 
   def self.find_by_name(name, level, parents = [], names)
+    cache_key = "#{parents.map{|i|i.text}.join('')}_#{name}#{level}"
+    cache = CACHE.get cache_key
+    if !cache.nil? && !cache.empty?
+      return ChinaUnit.new(cache)
+    end
     data = if parents.empty? 
               DATA[LEVELS[level]]
             else
@@ -96,29 +111,29 @@ class ChinaUnit
     else
       selected, options = get_selected_and_options_from_STDIN(names, result, data)
       target = selected ? ChinaUnit.new(options[selected.to_i]['id']) : nil
+      CACHE.set(cache_key, target.id) if target
     end
     return target
+  rescue => e
+    binding.pry
   end
 
-  def self.get_selected_and_options_from_STDIN(names, group1, group2)
+  def self.get_selected_and_options_from_STDIN(names, group1, group2) 
     selected = nil
     options = group1
     p '----------------------'
-    p "#{names.join('')} 是指:"
+    p "#{names.is_a?(Array)? names.join('') : names} 是指:"
     p select_text(group1)
     p "请输入序号选择, 没有请按e放大搜索范围，或者按n跳过: "
     loop do
       selected = STDIN.gets.strip
       case selected
-      when 'i'
-        binding.pry
-        exit
       when 'e'
         options = group2
         p select_text(group2)
         p "请输入序号选择, 按n跳过: "
       when 'n'
-        NOT_FOUND << [names, result]
+        NOT_FOUND << [names, group1, group2]
         break
       else
         break
@@ -134,8 +149,17 @@ class ChinaUnit
     results = arr.inject({}) do |r, i|
       a = i['text'].split("") 
       b = key_chars
+      similar_val = 0
       # 文本 a 和 b 的相似度 = a 和 b 的字符交集 / a 和 b 的字符并集
-      similar_val = i['text'] == key ? 1 : (a & b).size.to_f/(a | b).size
+      # 加上 b 在 a 中的个字符权重均衡
+      if i['text'] == key
+        similar_val = 2
+      else
+        u = a + b
+        v = b.map{|i| u.size - 1 - u.index(i)}.sum.to_f / b.size / (u.size - 0.5 - b.size.to_f/2)
+        similar_val = v + (a & b).size.to_f/(a | b).size
+      end
+      #p "#{key} sim  #{i['text']} = #{similar_val}"
       (r[similar_val] ||= []) << i
       r
     end

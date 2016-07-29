@@ -32,22 +32,25 @@ namespace :gem do
 
   desc '对比顺丰覆盖数据'
   task :diff_sf_china_cover do
-
     # 获取顺丰覆盖数据中街道数据
     sf_china_cover = CSV.read('db/sf_china_cover.csv').select.each_with_index do |row, i|
       i!=0 and row[6] and row[7] != '未开通'
     end.map{|i| i.slice(3..6)}
 
+    all = sf_china_cover.size
+
     # 逐个对比
-    sf_china_cover.each do |names|
+    sf_china_cover.each_with_index do |names, index|
       full_name = names.join('')
       search_result = ChinaUnit.find_by_names(names)
       fetch_name = search_result.last.full_name
       if full_name == fetch_name
         search_result.last.by_level(3)["support_sf"] = true
+        print "#{index.to_f/all * 100}%\r"
+        $stdout.flush
       else
         search_result.last.by_level(3)["support_sf"] = true
-        p "#{full_name} => #{fetch_name}"
+        p "#{full_name} => #{fetch_name} #{index.to_f/all * 100}%"
       end
     end
 
@@ -117,7 +120,6 @@ namespace :gem do
     code = args.code
     puts get_streets code
   end
-
 
   desc '处理淘宝区代码与国标不一致的情况，将对应关系保存到 db/district_gb2260_taobao'
   task :save_district_gb2260_taobao_map do
