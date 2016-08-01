@@ -10,6 +10,30 @@ GB2260::LATEST_REVISION = '201605'
 
 namespace :gem do
 
+  desc '导入顺丰货到付款数据'
+  task :sf_cash_on_delivery_list do
+    data = JSON.parse(File.read('db/sfexpress_cash_on_delivery_list.json'))
+    result = {}
+    data.each do |k, v|
+      is_province = k.include? "省"
+      names = is_province ? k.split("省") : k.split("市")
+      province = is_province ? names[0] + "省" : names[0] + "市"
+      city = names[1]
+      districts = v.split('、')
+      #p "#{province} #{city}"
+      if province
+        districts.each do |d|
+          chs = ChinaUnit.find_by_names([province, city, d].select{|i| i!="" and !i.nil?})
+          result[k+d] =  chs.last.id
+        end
+      end
+    end
+
+    File.open('db/sf_cash_code.json', 'w') do |f|
+      f.write JSON.pretty_generate(result)
+    end
+  end
+
   desc '从民政局网站抓取并生成省市区数据'
   task :update_data_from_mca do
     ChinaUnit.each(0) do |province|

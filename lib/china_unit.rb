@@ -9,7 +9,6 @@ class ChinaUnit
 
   DATA = JSON.parse(File.read("db/areas.json"))
   LEVELS = DATA.keys
-  NOT_FOUND = []
   CACHE = Redis.new(db: 14)
 
   attr_accessor :id, :text
@@ -133,7 +132,7 @@ class ChinaUnit
         p select_text(group2)
         p "请输入序号选择, 按n跳过: "
       when 'n'
-        NOT_FOUND << [names, group1, group2]
+        raise [names, group1, group2]
         break
       else
         break
