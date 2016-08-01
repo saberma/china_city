@@ -1,5 +1,26 @@
 require 'nokogiri'
 require 'redis'
+class ChinaUnitNotFoundError < RuntimeError
+  attr_accessor :names, :level, :parents, :name, :group1, :group2
+  def initialize(name, level, parents, names, group1, group2)
+    @names = names
+    @level = level
+    @name = name
+    @parents = parents
+    @group1 = group1
+    @group2 = group2
+  end
+end
+
+class ChinaUnitSkipError < RuntimeError
+  attr_accessor :names, :group1, :group2
+  def initialize(names, group1, group2)
+    @names = names
+    @group1 = group1
+    @group2 = group2
+  end
+end
+
 class ChinaUnit
   include HTTParty
 
@@ -85,7 +106,7 @@ class ChinaUnit
     names.each_with_index.inject([]) do |r, (name, index)|
       r << find_by_name(name, index, r, names)
       r
-    end
+    end.map{|i| ChinaUnit.new i['id']}
   end
 
   def self.select_text(result)
@@ -93,28 +114,36 @@ class ChinaUnit
   end
 
   def self.find_by_name(name, level, parents = [], names)
-    cache_key = "#{parents.map{|i|i.text}.join('')}_#{name}#{level}"
+    cache_key = "#{parents.map{|i|i['text']}.join('_')}_#{name}_#{level}"
     cache = CACHE.get cache_key
     if !cache.nil? && !cache.empty?
-      return ChinaUnit.new(cache)
+      return JSON.parse(cache)
     end
+
     data = if parents.empty? 
               DATA[LEVELS[level]]
             else
-              parents.last.children
+              DATA[LEVELS[level]].select{|i| i['id'].start_with? parents.last['id']}
             end
+    data = DATA[LEVELS[level]] if data.empty? or data.nil?
     result, similar_val = similar(name, data)
+
     target = nil
     if result.size == 1
-      target = ChinaUnit.new result.first['id']
+      target = result.first
     else
-      selected, options = get_selected_and_options_from_STDIN(names, result, data)
-      target = selected ? ChinaUnit.new(options[selected.to_i]['id']) : nil
-      CACHE.set(cache_key, target.id) if target
+      if parents.empty?
+        raise ChinaUnitNotFoundError.new(name, level, parents, names, nil, nil)
+      else
+        target = ChinaUnit.find_by_name(name, level, parents[0..-2], names)
+      end
+      #selected, options = get_selected_and_options_from_STDIN(names, result, data)
+      #target = selected ? ChinaUnit.new(options[selected.to_i]['id']) : nil
     end
+    CACHE.set(cache_key, target.to_json) if target
     return target
-  rescue => e
-    binding.pry
+  rescue ChinaUnitSkipError => e
+    raise ChinaUnitNotFoundError.new(name, level, parents, names, e.group1, e.group2)
   end
 
   def self.get_selected_and_options_from_STDIN(names, group1, group2) 
@@ -132,7 +161,7 @@ class ChinaUnit
         p select_text(group2)
         p "请输入序号选择, 按n跳过: "
       when 'n'
-        raise [names, group1, group2]
+        raise ChinaUnitSkipError.new(names, group1, group2)
         break
       else
         break

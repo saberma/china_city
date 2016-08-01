@@ -61,25 +61,41 @@ namespace :gem do
       i!=0 and row[6] and row[7] != '未开通'
     end.map{|i| i.slice(3..6)}
 
+    not_found = {}
+
     all = sf_china_cover.size
 
     # 逐个对比
     sf_china_cover.each_with_index do |names, index|
-      full_name = names.join('')
-      search_result = ChinaUnit.find_by_names(names)
-      fetch_name = search_result.last.full_name
-      if full_name == fetch_name
-        search_result.last.by_level(3)["support_sf"] = true
-        print "#{index.to_f/all * 100}%\r"
-        $stdout.flush
-      else
-        search_result.last.by_level(3)["support_sf"] = true
-        p "#{full_name} => #{fetch_name} #{index.to_f/all * 100}%"
+      begin
+        full_name = names.join('')
+        search_result = ChinaUnit.find_by_names(names)
+        fetch_name = search_result.last.full_name
+        if full_name == fetch_name
+          search_result.last.by_level(3)["support_sf"] = true
+          print "#{index.to_f/all * 100}%\r"
+          $stdout.flush
+        else
+          search_result.last.by_level(3)["support_sf"] = true
+          p "#{full_name} => #{fetch_name} #{index.to_f/all * 100}%"
+        end
+      rescue ChinaUnitNotFoundError => e
+        not_found[e.names.join("")] = {
+          names: e.names, name: e.name,
+          parents: e.parents.map{|i| i.id},
+          level: e.level
+        }
       end
     end
 
-    File.open('db/areas2.json', 'w') do |f|
+    puts "not_found: #{not_found.keys.size}"
+
+    File.open('db/areas.json', 'w') do |f|
       f.write JSON.pretty_generate(ChinaUnit::DATA)
+    end
+
+    File.open('db/sf_not_found.json', 'w') do |f|
+      f.write JSON.pretty_generate(not_found)
     end
   end
 
