@@ -1,0 +1,2852 @@
+[
+  {
+    "name": "秦屿镇",
+    "level": 3,
+    "names": [
+      "福建省",
+      "宁德市",
+      "福鼎市",
+      "秦屿镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "安远乡",
+    "level": 3,
+    "names": [
+      "福建省",
+      "三明市",
+      "宁化县",
+      "安远乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙来街道",
+    "level": 3,
+    "names": [
+      "江西省",
+      "新余市",
+      "渝水区",
+      "仙来街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "因村镇",
+    "level": 3,
+    "names": [
+      "河北省",
+      "石家庄市",
+      "元氏县",
+      "因村镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "满城县",
+    "level": 2,
+    "names": [
+      "河北省",
+      "保定市",
+      "满城县",
+      "满城镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "满城县",
+    "level": 2,
+    "names": [
+      "河北省",
+      "保定市",
+      "满城县",
+      "大册营镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "徐水县",
+    "level": 2,
+    "names": [
+      "河北省",
+      "保定市",
+      "徐水县",
+      "安肃镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "徐水县",
+    "level": 2,
+    "names": [
+      "河北省",
+      "保定市",
+      "徐水县",
+      "大王店镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "兴农街道",
+    "level": 3,
+    "names": [
+      "河北省",
+      "唐山市",
+      "路南区",
+      "兴农街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "振兴街道",
+    "level": 3,
+    "names": [
+      "河北省",
+      "唐山市",
+      "路南区",
+      "振兴街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "长春汽车产业开发区",
+    "level": 2,
+    "names": [
+      "吉林省",
+      "长春市",
+      "长春汽车产业开发区",
+      "东风街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "长春汽车产业开发区",
+    "level": 2,
+    "names": [
+      "吉林省",
+      "长春市",
+      "长春汽车产业开发区",
+      "正阳街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "经济技术产业开发区",
+    "level": 2,
+    "names": [
+      "吉林省",
+      "长春市",
+      "经济技术产业开发区",
+      "东方广场街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "经济技术产业开发区",
+    "level": 2,
+    "names": [
+      "吉林省",
+      "长春市",
+      "经济技术产业开发区",
+      "临河街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "建设街道",
+    "level": 3,
+    "names": [
+      "吉林省",
+      "通化市",
+      "集安市",
+      "建设街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "光辉乡",
+    "level": 3,
+    "names": [
+      "辽宁省",
+      "沈阳市",
+      "于洪区",
+      "光辉乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "辽中镇",
+    "level": 3,
+    "names": [
+      "辽宁省",
+      "沈阳市",
+      "辽中县",
+      "辽中镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "百股街道",
+    "level": 3,
+    "names": [
+      "辽宁省",
+      "锦州市",
+      "凌河区",
+      "百股街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": " ",
+    "level": 3,
+    "names": [
+      "山东省",
+      "淄博市",
+      "博山区",
+      " "
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "麋镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "德州市",
+      "陵县",
+      "麋镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "古槐街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "济阳街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "阜桥街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "越河街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "观音阁街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "南苑街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "市中区",
+    "level": 2,
+    "names": [
+      "山东省",
+      "济宁市",
+      "市中区",
+      "唐口街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "台西街道",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "市南区",
+      "台西街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "马店镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "胶州市",
+      "马店镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "普东镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "即墨市",
+      "普东镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "长乐镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "平度市",
+      "长乐镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "祝沟镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "平度市",
+      "祝沟镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "梅花山街道",
+    "level": 3,
+    "names": [
+      "山东省",
+      "青岛市",
+      "莱西市",
+      "梅花山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "重沟街道",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "河东区",
+      "重沟街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "葛沟镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "沂南县",
+      "葛沟镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城北镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "费县",
+      "城北镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "芍药山乡",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "费县",
+      "芍药山乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "魏庄乡",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "平邑县",
+      "魏庄乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "相邸镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "莒南县",
+      "相邸镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "界牌镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "临沂市",
+      "蒙阴县",
+      "界牌镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "山旺镇",
+    "level": 3,
+    "names": [
+      "山东省",
+      "潍坊市",
+      "临朐县",
+      "山旺镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "新桥镇",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "镇江市",
+      "丹阳市",
+      "新桥镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "三阳镇",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "南通市",
+      "海门市",
+      "三阳镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "大套乡",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "盐城市",
+      "滨海县",
+      "大套乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "张码街道",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "淮安市",
+      "清河区",
+      "张码街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南门街道",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "苏州市",
+      "姑苏区",
+      "南门街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "崇安寺街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "通江街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "广瑞路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "上马墩街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "江海街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "崇安区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "崇安区",
+      "广益街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "迎龙桥街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "南禅寺街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "清名桥街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "金星街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "金匮街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南长区",
+    "level": 2,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "南长区",
+      "扬名街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "山北街道",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "北塘区",
+      "山北街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "惠山街道",
+    "level": 3,
+    "names": [
+      "江苏省",
+      "无锡市",
+      "北塘区",
+      "惠山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "天目西路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "北站街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "宝山路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "共和新路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "大宁路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "彭浦新村街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "临汾路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "芷江西路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "闸北区",
+    "level": 2,
+    "names": [
+      "上海",
+      "上海市",
+      "闸北区",
+      "彭浦镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "申港街道",
+    "level": 3,
+    "names": [
+      "上海",
+      "上海市",
+      "浦东新区",
+      "申港街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "新桥乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "杭州市",
+      "临安市",
+      "新桥乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "昆铜乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "湖州市",
+      "安吉县",
+      "昆铜乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "宋畈乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "衢州市",
+      "常山县",
+      "宋畈乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "岭根乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "丽水市",
+      "青田县",
+      "岭根乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "册子乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "舟山市",
+      "定海区",
+      "册子乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "勾山街道",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "舟山市",
+      "普陀区",
+      "勾山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "洪殿街道",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "鹿城区",
+      "洪殿街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "水心街道",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "鹿城区",
+      "水心街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "绣山街道",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "鹿城区",
+      "绣山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "凤卧镇",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "平阳县",
+      "凤卧镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "舥艚镇",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "苍南县",
+      "舥艚镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "大渔镇",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "苍南县",
+      "大渔镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "北龙乡",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "瑞安市",
+      "北龙乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "南岳镇",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "乐清市",
+      "南岳镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "蒲岐镇",
+    "level": 3,
+    "names": [
+      "浙江省",
+      "温州市",
+      "乐清市",
+      "蒲岐镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "东山街道",
+    "level": 3,
+    "names": [
+      "广东省",
+      "揭阳市",
+      "榕城区",
+      "东山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "联和街道",
+    "level": 3,
+    "names": [
+      "广东省",
+      "广州市",
+      "萝岗区",
+      "联和街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "永和街道",
+    "level": 3,
+    "names": [
+      "广东省",
+      "广州市",
+      "萝岗区",
+      "永和街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "浛洸镇",
+    "level": 3,
+    "names": [
+      "广东省",
+      "清远市",
+      "英德市",
+      "浛洸镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "大痳镇",
+    "level": 3,
+    "names": [
+      "广东省",
+      "梅州市",
+      "大埔县",
+      "大痳镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "光明街道",
+    "level": 3,
+    "names": [
+      "广东省",
+      "深圳市",
+      "宝安区",
+      "光明街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "公益镇",
+    "level": 3,
+    "names": [
+      "广东省",
+      "江门市",
+      "台山市",
+      "公益镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "云乡镇",
+    "level": 3,
+    "names": [
+      "广东省",
+      "江门市",
+      "鹤山市",
+      "云乡镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "金谷工业园"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "金光工业园"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "滨海社区"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "果子山社区"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "水井坑社区"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钦州港经济技术开发区",
+    "level": 2,
+    "names": [
+      "广西壮族自治区",
+      "钦州市",
+      "钦州港经济技术开发区",
+      "亚路江社区"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "昌江黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "昌江黎族自治县",
+      "昌江县",
+      "石碌镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "陵水黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "陵水黎族自治县",
+      "陵水县",
+      "椰林镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "陵水黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "陵水黎族自治县",
+      "陵水县",
+      "英州镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "陵水黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "陵水黎族自治县",
+      "陵水县",
+      "本号镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "陵水黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "陵水黎族自治县",
+      "陵水县",
+      "提蒙乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "陵水黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "陵水黎族自治县",
+      "陵水县",
+      "群英乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "保亭黎族苗族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "保亭黎族苗族自治县",
+      "保亭县",
+      "保城镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "保亭黎族苗族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "保亭黎族苗族自治县",
+      "保亭县",
+      "三道镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "琼中黎族苗族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "琼中黎族苗族自治县",
+      "琼中县",
+      "营根镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "万宁市",
+    "level": 1,
+    "names": [
+      "海南省",
+      "万宁市",
+      "万宁市",
+      "万城镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "万宁市",
+    "level": 1,
+    "names": [
+      "海南省",
+      "万宁市",
+      "万宁市",
+      "兴隆镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "东方市",
+    "level": 1,
+    "names": [
+      "海南省",
+      "东方市",
+      "东方市",
+      "八所镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "抱由镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "九所镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "利国镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "黄流镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "佛罗镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "尖峰镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "乐东黎族自治县",
+    "level": 1,
+    "names": [
+      "海南省",
+      "乐东黎族自治县",
+      "乐东县",
+      "莺歌海镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "朝阳街道",
+    "level": 3,
+    "names": [
+      "甘肃省",
+      "嘉峪关市",
+      "嘉峪关市",
+      "朝阳街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "建设街道",
+    "level": 3,
+    "names": [
+      "甘肃省",
+      "嘉峪关市",
+      "嘉峪关市",
+      "建设街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "五一街道",
+    "level": 3,
+    "names": [
+      "甘肃省",
+      "嘉峪关市",
+      "嘉峪关市",
+      "五一街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "胜利街道",
+    "level": 3,
+    "names": [
+      "甘肃省",
+      "嘉峪关市",
+      "嘉峪关市",
+      "胜利街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "贵州省",
+      "安顺市",
+      "平坝县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "复兴镇",
+    "level": 3,
+    "names": [
+      "贵州省",
+      "黔西南布依族苗族自治州",
+      "望谟县",
+      "复兴镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "华县",
+    "level": 2,
+    "names": [
+      "陕西省",
+      "渭南市",
+      "华县",
+      "华州镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "余华乡",
+    "level": 3,
+    "names": [
+      "四川省",
+      "达州市",
+      "大竹县",
+      "余华乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "马营镇",
+    "level": 3,
+    "names": [
+      "四川省",
+      "广元市",
+      "利州区",
+      "马营镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "冲赛康街道",
+    "level": 3,
+    "names": [
+      "西藏自治区",
+      "拉萨市",
+      "城关区",
+      "冲赛康街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "新街镇",
+    "level": 3,
+    "names": [
+      "云南省",
+      "昆明市",
+      "晋宁县",
+      "新街镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "宝峰镇",
+    "level": 3,
+    "names": [
+      "云南省",
+      "昆明市",
+      "晋宁县",
+      "宝峰镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "青龙镇",
+    "level": 3,
+    "names": [
+      "云南省",
+      "昆明市",
+      "安宁市",
+      "青龙镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "太安镇",
+    "level": 3,
+    "names": [
+      "重庆",
+      "重庆市",
+      "潼南县",
+      "太安镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "双山乡",
+    "level": 3,
+    "names": [
+      "重庆",
+      "重庆市",
+      "铜梁县",
+      "双山乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "璧城街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "璧泉街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "青杠街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "来凤街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "丁家街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "大路街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "福禄镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "大兴镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "正兴镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "广普镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "三合镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "璧山县",
+    "level": 2,
+    "names": [
+      "重庆",
+      "重庆市",
+      "璧山县",
+      "健龙镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "钓鱼台街道",
+    "level": 3,
+    "names": [
+      "安徽省",
+      "蚌埠市",
+      "禹会区",
+      "钓鱼台街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "新庙街道",
+    "level": 3,
+    "names": [
+      "安徽省",
+      "铜陵市",
+      "狮子山区",
+      "新庙街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "五松镇",
+    "level": 3,
+    "names": [
+      "安徽省",
+      "铜陵市",
+      "铜陵县",
+      "五松镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "顺安镇",
+    "level": 3,
+    "names": [
+      "安徽省",
+      "铜陵市",
+      "铜陵县",
+      "顺安镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "刘河乡",
+    "level": 3,
+    "names": [
+      "河南省",
+      "商丘市",
+      "永城市",
+      "刘河乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "峨嵋大街街道",
+    "level": 3,
+    "names": [
+      "河南省",
+      "安阳市",
+      "文峰区",
+      "峨嵋大街街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "银杏大街街道",
+    "level": 3,
+    "names": [
+      "河南省",
+      "安阳市",
+      "文峰区",
+      "银杏大街街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "商颂大街街道",
+    "level": 3,
+    "names": [
+      "河南省",
+      "安阳市",
+      "文峰区",
+      "商颂大街街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "河南省",
+      "新乡市",
+      "原阳县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "河南省",
+      "南阳市",
+      "方城县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城郊乡",
+    "level": 3,
+    "names": [
+      "河南省",
+      "南阳市",
+      "社旗县",
+      "城郊乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "河南省",
+      "开封市",
+      "开封县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "河南省",
+      "洛阳市",
+      "新安县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "刘店乡",
+    "level": 3,
+    "names": [
+      "河南省",
+      "洛阳市",
+      "汝阳县",
+      "刘店乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "沁园街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "济水街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "北海街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "天坛街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "玉泉街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "克井镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "轵城镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "承留镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "邵原镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "王屋镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "济源市",
+    "level": 1,
+    "names": [
+      "河南省",
+      "济源市",
+      "济源市",
+      "下冶镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城南街道",
+    "level": 3,
+    "names": [
+      "河南省",
+      "周口市",
+      "川汇区",
+      "城南街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城北街道",
+    "level": 3,
+    "names": [
+      "河南省",
+      "周口市",
+      "川汇区",
+      "城北街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城郊乡",
+    "level": 3,
+    "names": [
+      "河南省",
+      "周口市",
+      "鹿邑县",
+      "城郊乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "绿水乡",
+    "level": 3,
+    "names": [
+      "湖北省",
+      "恩施土家族苗族自治州",
+      "来凤县",
+      "绿水乡"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "神农架",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "神农架",
+      "神农架林区",
+      "松柏镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "沙嘴街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "干河街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "龙华山街道"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "郑场镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "剅河镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "长埫口镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "西流河镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "沙湖镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "彭场镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "郭河镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "沔城回族镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "通海口镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "仙桃市",
+    "level": 1,
+    "names": [
+      "湖北省",
+      "仙桃市",
+      "仙桃市",
+      "陈场镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "城关镇",
+    "level": 3,
+    "names": [
+      "湖南省",
+      "岳阳市",
+      "岳阳县",
+      "城关镇"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  },
+  {
+    "name": "临澧经济开发区",
+    "level": 3,
+    "names": [
+      "湖南省",
+      "常德市",
+      "临澧县",
+      "临澧经济开发区"
+    ],
+    "parents": [
+
+    ],
+    "group1": null,
+    "group2": null
+  }
+]

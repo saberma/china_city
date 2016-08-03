@@ -10,27 +10,46 @@ GB2260::LATEST_REVISION = '201605'
 
 namespace :gem do
 
+  desc 'tmp'
+  task :jining do
+    data = get_remote_streets('370802').map do |s|
+      { 'id' => "370811#{s['id'][-3,3]}",
+        'text' => s['text'] }
+    end
+    p data
+    ChinaUnit::DATA['street'].concat data
+
+    File.open('db/areas.json', 'w') do |f|
+      f.write JSON.pretty_generate(ChinaUnit::DATA)
+    end
+  end
+
   desc '导入顺丰货到付款数据'
   task :sf_cash_on_delivery_list do
-    data = JSON.parse(File.read('db/sfexpress_cash_on_delivery_list.json'))
-    result = {}
-    data.each do |k, v|
-      is_province = k.include? "省"
-      names = is_province ? k.split("省") : k.split("市")
-      province = is_province ? names[0] + "省" : names[0] + "市"
-      city = names[1]
-      districts = v.split('、')
-      #p "#{province} #{city}"
-      if province
-        districts.each do |d|
-          chs = ChinaUnit.find_by_names([province, city, d].select{|i| i!="" and !i.nil?})
-          result[k+d] =  chs.last.id
-        end
+    data = JSON.parse(File.read('db/sf_not_found2.json'))
+    binding.pry
+    not_found = []
+    result = []
+    all = data.size
+    data.each_with_index do |v, index|
+      print "#{index.to_f/all * 100}%\r"
+      $stdout.flush
+      begin 
+        search_result = ChinaUnit.find_by_names(v['names'])
+        fetch_name = search_result.last.full_name
+        search_result.last.by_level(3)["support_sf"] = true
+      rescue ChinaUnitNotFoundError => e
+        not_found << e.to_hash
+        next
       end
     end
 
-    File.open('db/sf_cash_code.json', 'w') do |f|
-      f.write JSON.pretty_generate(result)
+    File.open('db/areas.json', 'w') do |f|
+      f.write JSON.pretty_generate(ChinaUnit::DATA)
+    end
+
+    File.open('db/sf_not_found2.json', 'w') do |f|
+      f.write JSON.pretty_generate(not_found)
     end
   end
 

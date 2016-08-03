@@ -10,6 +10,17 @@ class ChinaUnitNotFoundError < RuntimeError
     @group1 = group1
     @group2 = group2
   end
+
+  def to_hash
+    {
+      name: name,
+      level: level,
+      names: names,
+      parents: parents,
+      group1: group1,
+      group2: group2
+    }
+  end
 end
 
 class ChinaUnitSkipError < RuntimeError
@@ -123,7 +134,7 @@ class ChinaUnit
     data = if parents.empty? 
               DATA[LEVELS[level]]
             else
-              DATA[LEVELS[level]].select{|i| i['id'].start_with? parents.last['id']}
+              DATA[LEVELS[level]].select{|i| i['id'].start_with? parents.last['id'].gsub(/(00)+$/, '')}
             end
     data = DATA[LEVELS[level]] if data.empty? or data.nil?
     result, similar_val = similar(name, data)
@@ -135,10 +146,11 @@ class ChinaUnit
       if parents.empty?
         raise ChinaUnitNotFoundError.new(name, level, parents, names, nil, nil)
       else
-        target = ChinaUnit.find_by_name(name, level, parents[0..-2], names)
+        selected, options = get_selected_and_options_from_STDIN(names, result, data)
+        target = selected ? options[selected.to_i] : nil
+        #target = ChinaUnit.find_by_name(name, level, parents[0..-2], names)
+        raise ChinaUnitNotFoundError.new(name, level, parents, names, nil, nil) unless target
       end
-      #selected, options = get_selected_and_options_from_STDIN(names, result, data)
-      #target = selected ? ChinaUnit.new(options[selected.to_i]['id']) : nil
     end
     CACHE.set(cache_key, target.to_json) if target
     return target
