@@ -11,23 +11,23 @@ GB2260::LATEST_REVISION = '201605'
 namespace :gem do
 
   desc 'tmp'
-  task :jining do
-    data = get_remote_streets('370802').map do |s|
-      { 'id' => "370811#{s['id'][-3,3]}",
-        'text' => s['text'] }
-    end
-    p data
-    ChinaUnit::DATA['street'].concat data
+  task :tmp do
+    data = CSV.read('db/sf_not_found.csv')
 
-    File.open('db/areas.json', 'w') do |f|
-      f.write JSON.pretty_generate(ChinaUnit::DATA)
+    CSV.open('db/sf_not_found.csv', 'w') do |csv|
+      data.each do |i|
+        if i[4]=='1' and i[0]=='海南省'
+          i[2] = i[1]
+          i[1] = "省直辖县级行政单位" 
+        end
+        csv << i
+      end
     end
   end
 
   desc '导入顺丰货到付款数据'
   task :sf_cash_on_delivery_list do
-    data = JSON.parse(File.read('db/sf_not_found2.json'))
-    binding.pry
+    data = CSV.read('db/sf_not_found.csv')
     not_found = []
     result = []
     all = data.size
@@ -35,11 +35,11 @@ namespace :gem do
       print "#{index.to_f/all * 100}%\r"
       $stdout.flush
       begin 
-        search_result = ChinaUnit.find_by_names(v['names'])
+        search_result = ChinaUnit.find_by_names(v[0..-2])
         fetch_name = search_result.last.full_name
         search_result.last.by_level(3)["support_sf"] = true
       rescue ChinaUnitNotFoundError => e
-        not_found << e.to_hash
+        not_found << e.names.push(e.level)
         next
       end
     end
@@ -48,8 +48,10 @@ namespace :gem do
       f.write JSON.pretty_generate(ChinaUnit::DATA)
     end
 
-    File.open('db/sf_not_found2.json', 'w') do |f|
-      f.write JSON.pretty_generate(not_found)
+    CSV.open('db/sf_not_found.csv', 'w') do |csv|
+      not_found.each do |i|
+        csv << i
+      end
     end
   end
 
@@ -107,6 +109,7 @@ namespace :gem do
       end
     end
 
+    puts
     puts "not_found: #{not_found.keys.size}"
 
     File.open('db/areas.json', 'w') do |f|
