@@ -12,6 +12,8 @@ namespace :gem do
 
   desc 'tmp'
   task :tmp do
+    binding.pry
+
     data = CSV.read('db/sf_not_found.csv')
 
     CSV.open('db/sf_not_found.csv', 'w') do |csv|

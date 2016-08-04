@@ -10,6 +10,7 @@ module ChinaCity
     def list(parent_id='000000', options = {})
       parent_id ||= '000000'
       show_all = options[:show_all] || false
+      show_postcode = options[:postal_code] || false
 
       result = []
       return result if parent_id.blank?
@@ -22,7 +23,11 @@ module ChinaCity
       children = children[district_id][:children] if children.has_key?(district_id)
       children.each_key do |id|
         next if (!show_all && children[id][:sensitive_areas])
-        result.push [children[id][:text], id]
+        if postcode = children[id][:postcode] and show_postcode
+          result.push [children[id][:text], id, postcode]
+        else
+          result.push [children[id][:text], id]
+        end
       end
 
       #sort
