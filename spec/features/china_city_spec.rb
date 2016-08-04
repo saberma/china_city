@@ -61,7 +61,7 @@ feature 'china city', js: true do
           select '广州市'
           expect(find('.city-district').value).to be_blank
           sleep 2
-          expect(all('.city-district option').size).to eql 14
+          expect(all('.city-district option').size).to eql 12
         end
       end
     end
