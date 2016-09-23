@@ -45,6 +45,7 @@ module ChinaCity
       children = children[city_id][:children]
       return "#{prepend_parent ? (province_text + city_text) : ''}#{children[id][:text]}" if children.has_key?(id)
       district_id = district(id)
+      return nil unless children.has_key?(district_id)
       district_text = children[district_id][:text]
       children = children[district_id][:children]
       return "#{prepend_parent ? (province_text + city_text + district_text) : ''}#{children[id][:text]}"
